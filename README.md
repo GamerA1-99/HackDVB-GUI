@@ -1,1 +1,66 @@
-# HackDVB-GUI
+*HackDVB GUI
+A user-friendly graphical interface for creating and broadcasting DVB-S/S2 transport streams using FFmpeg, TSDuck, and DekTec hardware.
+
+HackDVB GUI is the spiritual digital successor to the analogue HackTV project. It provides a comprehensive suite of tools to encode media files, multiplex them into multiple services (channels), generate the necessary DVB tables (including a full EPG), and broadcast the resulting stream with a DekTec modulator card.
+
+!HackDVB GUI Screenshot (Suggestion: Replace the link above with a real screenshot of your application)
+
+*Features
+HackDVB GUI is designed to simplify the complex process of DVB broadcasting by providing a powerful, all-in-one interface.
+
+*Core Broadcasting Features
+Multi-Service Multiplexing: Create multiple TV and Radio channels within a single broadcast stream.
+Hardware-Accelerated Encoding: Offload CPU-intensive tasks to your GPU with support for NVIDIA CUDA (NVENC) and Intel Quick Sync Video (QSV).
+Advanced Encoding Options: Full control over video/audio codecs (MPEG-2, H.264, MP2, AC3, AAC), bitrates, presets, resolutions, framerates, and more.
+DVB-S & DVB-S2 Support: Configure all necessary transmission parameters, including modulation, FEC, symbol rate, and frequency, with an automatic Mux Rate calculator.
+Comprehensive Input Support: Use single media files, FFmpeg concat playlists, user-friendly managed playlists, or live UDP/IP streams as sources.
+Full EPG Management:
+A powerful EPG Editor to create, edit, and manage your broadcast schedule.
+Auto-generate EPG from media file durations, complete with metadata options.
+Automatic gap-filling to ensure a valid and displayable EPG on receivers.
+Subtitle Flexibility:
+Burn-in: Permanently render external .srt or .ass subtitles onto the video.
+DVB Subtitles: Pass through embedded subtitle tracks from the source file for viewer-toggleable subtitles.
+Audio Control: Select multiple audio tracks from your source files for multi-language broadcasts and apply EBU R128 loudness normalization for consistent volume.
+Utility & Workflow
+Standalone Media Tools: A dedicated "Tools" tab for batch processing files:
+Video Converter: Re-encode files to standard formats.
+Remux to TS: Quickly repackage .mp4 or .mkv files into a .ts container without re-encoding.
+Bitrate Converter: Re-encode files to a different bitrate.
+Subtitle Ripper: Extract embedded subtitles into .srt or .ass files.
+Live Previews: See the generated ffmpeg and tsp commands update in real-time as you change settings.
+Detailed Logging: View live log output from all backend processes to monitor performance and troubleshoot errors.
+Save & Load Configurations: Save your entire session—all channels, inputs, and settings—to a single JSON file and load it back later.
+Built-in Documentation: An in-app wiki provides detailed explanations of every feature and the underlying technologies.
+How It Works
+HackDVB GUI acts as an orchestrator for several powerful command-line tools, piping the output of one to the input of the next:
+
+FFmpeg: Handles all media decoding, filtering (subtitles, loudnorm), and re-encoding. It creates a compliant MPEG Transport Stream (MPEG-TS) containing all the video and audio for your services.
+TDT Injector (tdt.exe): A small companion utility that generates TDT/TOT packets, which are essential for a receiver's clock to synchronize and display EPG data correctly.
+TSDuck (tsp): Receives the stream from FFmpeg and performs the final muxing. It injects critical DVB Service Information (SI) tables (like NIT, SDT), injects the EPG data (EIT) from the generated XML file, and merges the time packets from the TDT Injector.
+DekTec Hardware: TSDuck outputs the final, constant-bitrate transport stream to the DekTec modulator card, which converts the digital stream into a real RF signal for broadcast.
+Requirements
+Hardware
+A DekTec DVB-S/S2 Modulator Card (e.g., DTA-2111) with an available PCIe slot.
+CPU: A modern multi-core CPU (Intel Core i5/i7, AMD Ryzen 5 or better) is recommended, especially for multi-channel or HD encoding.
+GPU (Optional but Recommended): An NVIDIA GPU (GTX 1050 or newer) or an Intel CPU with an integrated GPU is highly recommended for hardware-accelerated encoding.
+RAM: 8 GB minimum, 16 GB+ recommended.
+Software
+Python 3.x
+FFmpeg: Must be installed and available in your system's PATH.
+TSDuck: Must be installed and available in your system's PATH.
+TDT Injector (tdt.exe): This utility should be included with the application.
+The application includes a startup dependency checker that will guide you if any of these are missing.
+
+*Usage
+Services Tab: Click "Add Channel" to create a new service. Give it a name, provider, and a unique Program Number (SID).
+Inputs Tab: For each service, select an input type (e.g., Playlist) and add your media files. Use the "Probe Input Tracks" button to detect and select specific audio or embedded subtitle tracks.
+EPG (Optional): Use the "Auto-generate EPG" button for a quick schedule, or open the "Create/Edit EPG" editor for full control.
+Encoding & Muxing Tab: Configure your global video and audio settings. Enable CUDA or QSV if you have compatible hardware.
+DVB Broadcast Tab: Enter the parameters for your satellite transponder (Frequency, Symbol Rate, etc.) and click "Auto-Calculate" for the Mux Rate.
+Start Broadcast: Click the "Start Broadcast" button to begin transmission! Monitor the "Live Log" for status and errors.
+A Note on Encryption
+This application is designed for educational and experimental broadcasting of unencrypted, free-to-air content only. It does not support or include any features for scrambling the broadcast stream with a Conditional Access (CA) system.
+
+*License
+This project is licensed under the MIT License. See the LICENSE file for details.
