@@ -58,7 +58,7 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 
 **Software**
 
-* **OS: Windows 10 or 11 64-Bit**
+* **OS: Windows 10 or 11 64-Bit (Linux support coming in the future)**
 * **Python 3.x**
 * **DekTec Drivers: Must be installed and check that the card appears correctly in Device Management** [Download here](https://www.dektec.com/downloads/SDK/)
 * **FFmpeg: Must be installed and available in your system's PATH.** [Download here](https://www.ffmpeg.org/)
