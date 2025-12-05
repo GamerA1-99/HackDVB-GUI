@@ -59,7 +59,7 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 * **DekTec Drivers: Must be installed and check that the card appears correctly in Device Management** [Download here](https://www.dektec.com/downloads/SDK/)
 * **FFmpeg: Must be installed and available in your system's PATH.** [Download here](https://www.ffmpeg.org/)
 * **TSDuck: Must be installed and available in your system's PATH.** [Download here](https://tsduck.io/)
-* **TDT Injector (tdt.exe): This utility should be included with the application.**
+* **TDT Injector (tdt.exe): This utility should be included with the application.** [Download here](https://github.com/GamerA1-99/HackDVB-TDT.exe)
 
 * **The application includes a startup dependency checker that will guide you if any of these are missing.**
 
