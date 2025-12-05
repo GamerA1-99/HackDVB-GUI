@@ -56,9 +56,11 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 
 * **OS: Windows 10 or 11 64-Bit**
 * **Python 3.x**
-* **FFmpeg: Must be installed and available in your system's PATH.**
-* **TSDuck: Must be installed and available in your system's PATH.**
+* **DekTec Drivers: Must be installed and check that the card appears correctly in Device Management** [Download here](https://www.dektec.com/downloads/SDK/)
+* **FFmpeg: Must be installed and available in your system's PATH.** [Download here](https://www.ffmpeg.org/)
+* **TSDuck: Must be installed and available in your system's PATH.** [Download here]([https://www.ffmpeg.org/](https://tsduck.io/)
 * **TDT Injector (tdt.exe): This utility should be included with the application.**
+
 * **The application includes a startup dependency checker that will guide you if any of these are missing.**
 
 ## **Usage**
