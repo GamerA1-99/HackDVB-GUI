@@ -59,7 +59,7 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 **Software**
 
 * **OS: Windows 10 or 11 64-Bit (Linux support coming in the future)**
-* **Python 3.x**
+* **Python 3.x** [Download here](https://www.python.org/downloads/)
 * **DekTec Drivers: Must be installed and check that the card appears correctly in Device Management** [Download here](https://www.dektec.com/downloads/SDK/)
 * **FFmpeg: Must be installed and available in your system's PATH.** [Download here](https://www.ffmpeg.org/)
 * **TSDuck: Must be installed and available in your system's PATH.** [Download here](https://tsduck.io/)
@@ -68,6 +68,9 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 * **The application includes a startup dependency checker that will guide you if any of these are missing.**
 
 ## **Usage**
+
+### **After all the dependencies are installed just download the .rar file containing the "HackDVB GUI.exe" file and open it**
+
 
 * **Services Tab:** Click "Add Channel" to create a new service. Give it a name, provider, and a unique Program Number (SID).
 * **Inputs Tab:** For each service, select an input type (e.g., Playlist) and add your media files. Use the "Probe Input Tracks" button to detect and select specific audio or embedded subtitle tracks.
