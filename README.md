@@ -1,14 +1,15 @@
-*HackDVB GUI
+HackDVB GUI
+
 A user-friendly graphical interface for creating and broadcasting DVB-S/S2 transport streams using FFmpeg, TSDuck, and DekTec hardware.
 
 HackDVB GUI is the spiritual digital successor to the analogue HackTV project. It provides a comprehensive suite of tools to encode media files, multiplex them into multiple services (channels), generate the necessary DVB tables (including a full EPG), and broadcast the resulting stream with a DekTec modulator card.
 
 !HackDVB GUI Screenshot (Suggestion: Replace the link above with a real screenshot of your application)
 
-*Features
+Features
 HackDVB GUI is designed to simplify the complex process of DVB broadcasting by providing a powerful, all-in-one interface.
 
-*Core Broadcasting Features
+Core Broadcasting Features
 Multi-Service Multiplexing: Create multiple TV and Radio channels within a single broadcast stream.
 Hardware-Accelerated Encoding: Offload CPU-intensive tasks to your GPU with support for NVIDIA CUDA (NVENC) and Intel Quick Sync Video (QSV).
 Advanced Encoding Options: Full control over video/audio codecs (MPEG-2, H.264, MP2, AC3, AAC), bitrates, presets, resolutions, framerates, and more.
@@ -52,7 +53,7 @@ TSDuck: Must be installed and available in your system's PATH.
 TDT Injector (tdt.exe): This utility should be included with the application.
 The application includes a startup dependency checker that will guide you if any of these are missing.
 
-*Usage
+Usage
 Services Tab: Click "Add Channel" to create a new service. Give it a name, provider, and a unique Program Number (SID).
 Inputs Tab: For each service, select an input type (e.g., Playlist) and add your media files. Use the "Probe Input Tracks" button to detect and select specific audio or embedded subtitle tracks.
 EPG (Optional): Use the "Auto-generate EPG" button for a quick schedule, or open the "Create/Edit EPG" editor for full control.
