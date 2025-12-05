@@ -50,11 +50,12 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 
 **Hardware**
 
-* A **DekTec DVB-S/S2 Modulator Card (e.g., DTA-2111) with an available PCIe slot.**
+* A **DekTec DVB-S/S2 Modulator Card (e.g., DTA-107, DTA-2111) with an available PCI or PCIe slot.**
 * **CPU:** A modern multi-core CPU (Intel Core i5/i7, AMD Ryzen 5 or better) is recommended, especially for multi-channel or HD encoding.
 * **GPU (Optional but Recommended):** An NVIDIA GPU (GTX 1050 or newer) or an Intel CPU with an integrated GPU is highly recommended for hardware-accelerated encoding.
 * **RAM:** 8 GB minimum, 16 GB+ recommended.
 
+### **Lower specs may work then the recomended ones, but can't promise everything will work as imtended.**
 
 **Software**
 
