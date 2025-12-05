@@ -4,8 +4,6 @@ A user-friendly graphical interface for creating and broadcasting DVB-S/S2 trans
 
 HackDVB GUI is the spiritual digital successor to the analogue HackTV project. It provides a comprehensive suite of tools to encode media files, multiplex them into multiple services (channels), generate the necessary DVB tables (including a full EPG), and broadcast the resulting stream with a DekTec modulator card.
 
-!HackDVB GUI Screenshot (Suggestion: Replace the link above with a real screenshot of your application)
-
 Features
 HackDVB GUI is designed to simplify the complex process of DVB broadcasting by providing a powerful, all-in-one interface.
 
