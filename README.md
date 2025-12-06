@@ -19,7 +19,7 @@ HackDVB GUI is designed to simplify the complex process of DVB broadcasting by p
 
 * **DVB-S & DVB-S2 Support:** Configure all necessary transmission parameters, including modulation, FEC, symbol rate, and frequency, with an automatic Mux Rate calculator.
 
-* **Comprehensive Input Support:** Use single media files, FFmpeg concat playlists, user-friendly managed playlists, or live UDP/IP streams as sources.
+* **Comprehensive Input Support:** Use single media files, FFmpeg concat playlists, user-friendly UI managed playlists, or live UDP/IP streams as sources.
 
 * **Full EPG Management:**
 A powerful EPG Editor to create, edit, and manage your broadcast schedule.
@@ -27,11 +27,11 @@ Auto-generate EPG from media file durations, complete with metadata options.
 Automatic gap-filling to ensure a valid and displayable EPG on receivers.
 
 * **Subtitle Flexibility:**
-Burn-in: Permanently render external .srt or .ass subtitles onto the video.
+Burn-in: Permanently render external .srt .vtt or .ass subtitles onto the video.
 
-* **DVB Subtitles:** Pass through embedded subtitle tracks from the source file for viewer-toggleable subtitles.
+* **DVB and Teletext subtitles:** Pass through embedded subtitle tracks from the source file for viewer-toggleable subtitles.
 
-* **Audio Control:** Select multiple audio tracks from your source files for multi-language broadcasts and apply EBU R128 loudness normalization for consistent volume.
+* **Audio Control:** Select multiple audio tracks from your source files for multi-language broadcasts and apply EBU R128 loudness normalization for consistent volume. Viewer-toggleable audio is available when more then one audio track is being broadcasted. 
 
 * **Standalone Media Tools:** A dedicated "Tools" tab for batch processing files:
 
@@ -55,8 +55,11 @@ Burn-in: Permanently render external .srt or .ass subtitles onto the video.
 HackDVB GUI acts as an orchestrator for several powerful command-line tools, piping the output of one to the input of the next:
 
 * **FFmpeg:** Handles all media decoding, filtering (subtitles, loudnorm), and re-encoding. It creates a compliant MPEG Transport Stream (MPEG-TS) containing all the video and audio for your services.
+
 * **TDT Injector (tdt.exe):** A small companion utility that generates TDT/TOT packets, which are essential for a receiver's clock to synchronize and display EPG data correctly.
+
 * **TSDuck (tsp):** Receives the stream from FFmpeg and performs the final muxing. It injects critical DVB Service Information (SI) tables (like NIT, SDT), injects the EPG data (EIT) from the generated XML file, and merges the time packets from the TDT Injector.
+
 * **DekTec Hardware:** TSDuck outputs the final, constant-bitrate transport stream to the DekTec modulator card, which converts the digital stream into a real RF signal for broadcast.
 
 ## **Requirements**
