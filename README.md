@@ -81,7 +81,7 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 
 * **The application includes a startup dependency checker that will guide you if any of these are missing.**
 
-## **Usage**
+# **Usage**
 
 ### **After all the dependencies are installed just download the .rar file containing the "HackDVB GUI.exe" file and open it**
 
