@@ -11,7 +11,6 @@ HackDVB GUI is the spiritual digital successor to the analogue HackTV project. I
 ## **Features**
 HackDVB GUI is designed to simplify the complex process of DVB broadcasting by providing a powerful, all-in-one interface.
 
-## **Core Broadcasting Features**
 * Multi-Service Multiplexing: Create multiple TV and Radio channels within a single broadcast stream.
 
 * **Hardware-Accelerated Encoding:** Offload CPU-intensive tasks to your GPU with support for NVIDIA CUDA (NVENC) and Intel Quick Sync Video (QSV).
