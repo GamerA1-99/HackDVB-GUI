@@ -19,6 +19,8 @@ HackDVB GUI is designed to simplify the complex process of DVB broadcasting by p
 
 * **DVB-S & DVB-S2 Support:** Configure all necessary transmission parameters, including modulation, FEC, symbol rate, and frequency, with an automatic Mux Rate calculator.
 
+* Also no DVB-T, T2, C or C2 support just DVB-S and S2. Reason is that my Dektec card (the DTA-107) just has support for DVB-S and S2 standards so can’t really test if I implement DVB-T or DVB-C support that it will work properly with everything and all the functions. But until then I have made it so it’s possible to extract the generated commands in the program to a txt file or a bat file (can also just copy paste it) so in theory if someone wants to use other dvb standards with their supported Dektec cards, they can extract a finished generated commands and replace the DVB-S bits of the command to other DVB standards and should work then as long it’s follows tsduck parameter for that standard and requires all the dependencies are available/added into the system PATH. But as fast I get my hand on other cards with support for other DVB standards I will of corse add support for the remaining DVB standards. But better to leave it out then blindly code it in and hope that it is working for now.
+
 * **Comprehensive Input Support:** Use single media files, FFmpeg concat playlists, user-friendly UI managed playlists, or live UDP/IP streams as sources.
 
 * **Full EPG Management:**
