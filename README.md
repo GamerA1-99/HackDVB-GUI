@@ -13,29 +13,41 @@ HackDVB GUI is designed to simplify the complex process of DVB broadcasting by p
 
 ## **Core Broadcasting Features**
 Multi-Service Multiplexing: Create multiple TV and Radio channels within a single broadcast stream.
+
 Hardware-Accelerated Encoding: Offload CPU-intensive tasks to your GPU with support for NVIDIA CUDA (NVENC) and Intel Quick Sync Video (QSV).
+
 Advanced Encoding Options: Full control over video/audio codecs (MPEG-2, H.264, MP2, AC3, AAC), bitrates, presets, resolutions, framerates, and more.
+
 DVB-S & DVB-S2 Support: Configure all necessary transmission parameters, including modulation, FEC, symbol rate, and frequency, with an automatic Mux Rate calculator.
+
 Comprehensive Input Support: Use single media files, FFmpeg concat playlists, user-friendly managed playlists, or live UDP/IP streams as sources.
 
 Full EPG Management:
 A powerful EPG Editor to create, edit, and manage your broadcast schedule.
 Auto-generate EPG from media file durations, complete with metadata options.
 Automatic gap-filling to ensure a valid and displayable EPG on receivers.
+
 Subtitle Flexibility:
 Burn-in: Permanently render external .srt or .ass subtitles onto the video.
 DVB Subtitles: Pass through embedded subtitle tracks from the source file for viewer-toggleable subtitles.
+
 Audio Control: Select multiple audio tracks from your source files for multi-language broadcasts and apply EBU R128 loudness normalization for consistent volume.
 Utility & Workflow
 
 Standalone Media Tools: A dedicated "Tools" tab for batch processing files:
+
 Video Converter: Re-encode files to standard formats.
+
 Remux to TS: Quickly repackage .mp4 or .mkv files into a .ts container without re-encoding.
+
 Bitrate Converter: Re-encode files to a different bitrate.
 Subtitle Ripper: Extract embedded subtitles into .srt or .ass files.
+
 Live Previews: See the generated ffmpeg and tsp commands update in real-time as you change settings.
+
 Detailed Logging: View live log output from all backend processes to monitor performance and troubleshoot errors.
 Save & Load Configurations: Save your entire session—all channels, inputs, and settings—to a single JSON file and load it back later.
+
 Built-in Documentation: An in-app wiki provides detailed explanations of every feature and the underlying technologies.
 
 ## **How It Works**
