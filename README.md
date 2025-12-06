@@ -27,7 +27,7 @@ Auto-generate EPG from media file durations, complete with metadata options.
 Automatic gap-filling to ensure a valid and displayable EPG on receivers.
 
 * **Subtitle Flexibility:**
-Burn-in: Permanently render external .srt .vtt or .ass subtitles onto the video.
+Burn-in: Permanently render external .srt, .vtt or .ass subtitles onto the video.
 
 * **DVB and Teletext subtitles:** Pass through embedded subtitle tracks from the source file for viewer-toggleable subtitles.
 
