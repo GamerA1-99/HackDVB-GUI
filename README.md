@@ -67,8 +67,11 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 **Hardware**
 
 * A **DekTec DVB-S/S2 Modulator Card (e.g., DTA-107, DTA-2111) with an available PCI or PCIe slot.**
+
 * **CPU:** A modern multi-core CPU (Intel Core i5/i7, AMD Ryzen 5 or better) is recommended, especially for multi-channel or HD encoding.
+
 * **GPU (Optional but Recommended):** An NVIDIA GPU (GTX 1050 or newer) or an Intel CPU with an integrated GPU is highly recommended for hardware-accelerated encoding.
+
 * **RAM:** 8 GB minimum, 16 GB+ recommended.
 
 ### **Lower specs may work other then the recomended ones, but can't promise everything will work as intended.**
@@ -76,10 +79,15 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 **Software**
 
 * **OS: Windows 10 or 11 64-Bit (Linux support coming in the future)**
+
 * **Python 3.x** [Download here](https://www.python.org/downloads/)
+
 * **DekTec Drivers: Must be installed and check that the card appears correctly in Device Management** [Download here](https://www.dektec.com/downloads/SDK/)
+
 * **FFmpeg: Must be installed and available in your system's PATH.** [Download here](https://www.ffmpeg.org/)
+
 * **TSDuck: Must be installed and available in your system's PATH.** [Download here](https://tsduck.io/)
+
 * **TDT Injector (tdt.exe): This utility should be included with the application.** [Download here](https://github.com/GamerA1-99/HackDVB-TDT.exe)
 
 * **The application includes a startup dependency checker that will guide you if any of these are missing.**
@@ -90,10 +98,15 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 
 
 * **Services Tab:** Click "Add Channel" to create a new service. Give it a name, provider, and a unique Program Number (SID).
+
 * **Inputs Tab:** For each service, select an input type (e.g., Playlist) and add your media files. Use the "Probe Input Tracks" button to detect and select specific audio or embedded subtitle tracks.
+
 * **EPG (Optional):** Use the "Auto-generate EPG" button for a quick schedule, or open the "Create/Edit EPG" editor for full control.
+
 * **Encoding & Muxing Tab:** Configure your global video and audio settings. Enable CUDA or QSV if you have compatible hardware.
+
 * **DVB Broadcast Tab:** Enter the parameters for your satellite transponder (Frequency, Symbol Rate, etc.) and click "Auto-Calculate" for the Mux Rate.
+
 * **Start Broadcast:** Click the "Start Broadcast" button to begin transmission! Monitor the "Live Log" for status and errors.
 
 **A Note on Encryption**
