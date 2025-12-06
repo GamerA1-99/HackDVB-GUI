@@ -74,6 +74,8 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 
 * **RAM:** 8 GB minimum, 16 GB+ recommended.
 
+* **Storage:** a SSD for the OS is highly recomended as it will improve the speed and make the pc run smoother when running this program and generally when using. Also a SSD or HDD for storage of your mediafiles etc is also recomended (if not using just livestreams like IP/UDP). 
+
 ### **Lower specs may work other then the recomended ones, but can't promise everything will work as intended.**
 
 **Software**
