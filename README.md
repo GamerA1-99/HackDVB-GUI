@@ -82,7 +82,7 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 
 **Software**
 
-* **OS: Windows 10 or 11 64-Bit (Linux support coming in the future)**
+* **OS: Windows 10 or 11 (Just 64-Bit support) (Linux support coming in the future)**
 
 * **Python 3.x** [Download here](https://www.python.org/downloads/)
 
