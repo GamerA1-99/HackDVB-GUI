@@ -84,7 +84,7 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 
 * **OS: Windows 10 or 11 (Just 64-Bit support) (Linux support coming in the future)**
 
-* **Python 3.x** [Download here](https://www.python.org/downloads/)
+* **Python 3.x (64-Bit, "standalone installer", and not "install manager") [Download here](https://www.python.org/downloads/) (Remember when installing, press on customize tab and also tick of all the checkmarks like on the first screen: "Use admin privilges when installing py.exe" and "Add python.exe to PATH". Also tick on all optional options for best support and minimizing error or missing python dependencies in the customize installation.)**
 
 * **DekTec Drivers: Must be installed and check that the card appears correctly in Device Management** [Download here](https://www.dektec.com/downloads/SDK/)
 
@@ -94,7 +94,9 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 
 * **TDT Injector (tdt.exe): This utility should be included with the application.** [Download here](https://github.com/GamerA1-99/HackDVB-TDT.exe)
 
-* **The application includes a startup dependency checker that will guide you if any of these are missing.**
+* **PyInstaller 6.x (64-bit) [Download here](https://pyinstaller.org/en/stable/) (Optional, just for creating/compile your own .exe file and not needed for the already created .exe to work or .py under download tab)**
+
+* **The application includes a dependency checker and info tab that will guide you if any of these required dependencies are missing.**
 
 # **Usage**
 
