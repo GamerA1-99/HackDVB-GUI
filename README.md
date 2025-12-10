@@ -2,7 +2,7 @@
 
 A user-friendly graphical interface for creating and broadcasting DVB-S/S2 transport streams using FFmpeg, TSDuck, and DekTec hardware.
 
-HackDVB GUI is the spiritual digital successor to the analogue HackTV project. It provides a comprehensive suite of tools to encode media files, multiplex them into multiple services (channels), generate the necessary DVB tables (including a full EPG), and broadcast the resulting stream with a DekTec modulator card.
+HackDVB GUI is the spiritual digital successor to the analogue [HackTV project](https://github.com/captainjack64/hacktv). It provides a comprehensive suite of tools to encode media files, multiplex them into multiple services (channels), generate the necessary DVB tables (including a full EPG), and broadcast the resulting stream with a DekTec modulator card.
 
 
 <img width="1920" height="1041" alt="image" src="https://github.com/GamerA1-99/HackDVB-GUI/blob/main/Front%20page.PNG" />
