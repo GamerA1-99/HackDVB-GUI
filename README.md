@@ -84,7 +84,7 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 
 * **OS: Windows 10 or 11 (Just 64-Bit support) (Linux support coming in the future)**
 
-* **Python 3.x (64-Bit, "standalone installer", and not "install manager") [Download here](https://www.python.org/downloads/) (Remember when installing, press on customize tab and also tick of all the checkmarks like on the first screen: "Use admin privilges when installing py.exe" and "Add python.exe to PATH". Also tick on all optional options for best support and minimizing error or missing python dependencies in the customize installation.)**
+* **Python 3.x (64-Bit, "standalone installer", and not "install manager") [Download here](https://www.python.org/downloads/) (Remember when installing, press on customize tab and also tick of all the checkmarks like on the first screen: "Use admin privilges when installing py.exe" and "Add python.exe to PATH". Also tick on all optional options for best support and minimizing error or missing python dependencies in the customize installation tab/section.)**
 
 * **DekTec Drivers: Must be installed and check that the card appears correctly in Device Management** [Download here](https://www.dektec.com/downloads/SDK/)
 
@@ -92,7 +92,7 @@ HackDVB GUI acts as an orchestrator for several powerful command-line tools, pip
 
 * **TSDuck: Must be installed and available in your system's PATH.** [Download here](https://tsduck.io/)
 
-* **TDT Injector (tdt.exe): This utility should be included with the application.** [Download here](https://github.com/GamerA1-99/HackDVB-TDT.exe)
+* **TDT Injector (tdt.exe): This utility should be included with the application. If not working or complaning about its missing then it must be installed and available in your system's PATH.** [Download here](https://github.com/GamerA1-99/HackDVB-TDT.exe)
 
 * **PyInstaller 6.x (64-bit) [Download here](https://pyinstaller.org/en/stable/) (Optional, just for creating/compile your own .exe file and not needed for the already created .exe to work or .py under download tab)**
 
