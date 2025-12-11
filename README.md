@@ -43,11 +43,11 @@ Burn-in: Permanently render external .srt, .vtt or .ass subtitles onto the video
 
 * **Video Converter:** Re-encode files to standard formats.
 
-* **Remux to TS:** Quickly repackage .mp4 or .mkv files into a .ts container without re-encoding.
+* **Remux to TS:** Quickly repackage .mp4 or .mkv amoung other files into a .ts container without re-encoding.
 
 * **Bitrate Converter:** Re-encode files to a different bitrate.
 
-* **Subtitle Ripper:** Extract embedded subtitles into .srt or .ass files.
+* **Subtitle Ripper:** Extract embedded subtitles into .srt, .vtt or .ass files.
 
 * **Live Previews:** See the generated ffmpeg and tsp commands update in real-time as you change settings.
 
